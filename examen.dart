@@ -4,15 +4,26 @@ void main() {
   var tamanoArray = arrayNumeros.length;
   var mayor = 0;
   var menor = 999999;
+
   for (int indice=0; indice < tamanoArray; indice++) {
+    
+      if (arrayNumeros[indice] % 2 > 0){
+          print(arrayNumeros[indice].toString()+ " es impar");
+      }
+
+   
+    
     if (arrayNumeros[indice] > mayor) {
       mayor = arrayNumeros[indice];      
     }
     if (arrayNumeros[indice] < menor) {
       menor = arrayNumeros[indice];
     }
+
     suma = suma + arrayNumeros[indice];
   }
   var resultado = suma/tamanoArray;
-  print ("mayor es:" + mayor.toString() + "\nmenor es:"+ menor.toString() + "\navg es: "+ resultado.toString());
+  print ("El mayor es:" + mayor.toString()
+         + "\nEl menor es:"+ menor.toString()
+         + "\nEl promedio es: "+ resultado.toString());
 }
