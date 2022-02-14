@@ -15,7 +15,7 @@ void main() {
       var impares = array_numeros[i];
       print("El número " + impares.toString() + " es impar");
     }
-//Sacar el mayor o menos
+//Sacar el mayor o menor
 
     if (mayor <= array_numeros[i]) {
       mayor = array_numeros[i];
