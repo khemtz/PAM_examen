@@ -10,19 +10,14 @@ void main() {
       if (arrayNum[i] % 2 > 0){
           print("El #" + arrayNum[i].toString()+ " es impar");
       }
-    
      if (arrayNum[i] < menor) {
       menor = arrayNum[i];
     }
-
     if (arrayNum[i] > mayor) {
       mayor = arrayNum[i];      
     }
-   
     suma = suma + arrayNum[i];
   }
   var resultado = suma/length;
-  print ("El mayor es:" + mayor.toString() + "\n"
-         + "El menor es:"+ menor.toString() + "\n"
-         + "El promedio es: "+ resultado.toString());
+  print ("\n"+"El promedio es: "+ resultado.toStringAsFixed(2) + "\n" + "\n" "El # mayor es: " + mayor.toString() + "\n"+ "El # menor es: "+ menor.toString()); 
 }
