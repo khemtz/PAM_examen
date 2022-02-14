@@ -1,14 +1,28 @@
 void main() {
-  var array_numeros = [22, 44, 5, 3, 6, 99, 12, 45, 87, 23, 22, 12];
+  var arrayNum = [22, 44, 5, 3, 6, 99, 12, 45, 87, 23, 22, 12];
   var suma = 0;
+  var length = 12;
+ var mayor = arrayNum[0];
+  var menor = arrayNum[0];
 
-  //procedo a leer el contenido de cada elemento del arreglo
+  for (int i=0; i < length; i++) {
+    
+      if (arrayNum[i] % 2 > 0){
+          print("El #" + arrayNum[i].toString()+ " es impar");
+      }
+    
+     if (arrayNum[i] < menor) {
+      menor = arrayNum[i];
+    }
 
-  for (int i = 0; i < array_numeros.length; i++) {
-    print(i.toString() + " ->" + array_numeros[i].toString());
-    suma = suma + array_numeros[i];
+    if (arrayNum[i] > mayor) {
+      mayor = arrayNum[i];      
+    }
+   
+    suma = suma + arrayNum[i];
   }
-
-  print(array_numeros);
-  print("la suma es:" + suma.toString());
+  var resultado = suma/length;
+  print ("El mayor es:" + mayor.toString() + "\n"
+         + "El menor es:"+ menor.toString() + "\n"
+         + "El promedio es: "+ resultado.toString());
 }
