@@ -8,7 +8,7 @@ void main() {
   for (int i=0; i < length; i++) {
     
       if (arrayNum[i] % 2 > 0){
-          print("El #" + arrayNum[i].toString()+ " es impar");
+          print("El #" + arrayNum[i].toStringAsFixed(1)+ " es impar");
       }
      if (arrayNum[i] < menor) {
       menor = arrayNum[i];
@@ -18,6 +18,6 @@ void main() {
     }
     suma = suma + arrayNum[i];
   }
-  var resultado = suma/length;
-  print ("\n"+"El promedio es: "+ resultado.toStringAsFixed(2) + "\n" + "\n" "El # mayor es: " + mayor.toString() + "\n"+ "El # menor es: "+ menor.toString()); 
+  var avg = suma/length;
+  print ("\n"+"El promedio es: "+ avg.toStringAsFixed(2) + "\n" + "\n" "El # mayor es: " + mayor.toString() + "\n"+ "El # menor es: "+ menor.toString()); 
 }
