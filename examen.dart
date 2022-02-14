@@ -5,11 +5,11 @@ void main() {
   var mayor = array_numeros[0];
   var menor = array_numeros[0];
 
-  //procedo a leer el contenido de cada elemento del arreglo
+  //Leer contenido
   for (int i = 0; i < array_numeros.length; i++) {
  
 
-//Funcion para sacar numeros pares e impares
+//Sacar numeros pares e impares
 
     if (array_numeros[i] % 2 > 0) {
       var impares = array_numeros[i];
@@ -29,7 +29,7 @@ void main() {
   }
   var result = suma / tamanoArray;
 
-//Resultados
+//Imprimir
 
   print("El número mayor es:" + mayor.toString());
   print("El número menor es:" + menor.toString());
